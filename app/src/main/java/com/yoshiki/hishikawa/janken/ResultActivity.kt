@@ -42,11 +42,11 @@ class ResultActivity : AppCompatActivity() {
 
         // コンピュータの手をランダム表示
 //        val comHand = (Math.random() * 3).toInt()
-//        when(comHand) {
-//            gu -> comHandImage.setImageResource(R.drawable.com_gu)
-//            choki -> comHandImage.setImageResource(R.drawable.com_choki)
-//            pa -> comHandImage.setImageResource(R.drawable.com_pa)
-//        }
+        when(comHand) {
+            gu -> comHandImage.setImageResource(R.drawable.com_gu)
+            choki -> comHandImage.setImageResource(R.drawable.com_choki)
+            pa -> comHandImage.setImageResource(R.drawable.com_pa)
+        }
 
         // 勝敗判定
         // ロジック （コンピュータの手 - プレイヤーの手 + 3）% 3 = 0:引き分け 1:勝ち 2:負け
